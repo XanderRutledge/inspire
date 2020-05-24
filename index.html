@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Inspire</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="text-shadow bg-dark">
+
+	<header></header>
+
+
+	<main class="container-fluid m-0 p-0">
+
+		<div class="row justify-content-center">
+			<div class="col">
+				<div id="image" class="imgbox">
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center text-center">
+			<div class="col-12 py-5">
+				<div id="weather">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-3 mx-5">
+				<div>
+					<h2>ToDo List</h2>
+					<form onsubmit="app.todoController.addTodo(event)">
+						<input type="text" id="item" class="form-group" required placeholder="add item">
+						<button type="submit" class="btn btn-primary ml-1">+</button></form>
+					<div id="todos"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col" id="time">
+
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="container-fluid text-center pb-5 ">
+		<div class="row text-center justify-content-center">
+			<div class="col-8" id="quote">
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+	<script type="module" src="app/main.js"></script>
+</body>
+
+
+
+</html>
+<html>
